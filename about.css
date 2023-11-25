@@ -46,31 +46,30 @@ section {
     border: none;
     border-radius: 5px;
     color: white;
-    background-color: rgb(0, 5, 71); /* Default background color */
+    background-color: rgb(0, 5, 71);
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    transition: background-color 0.3s ease;
   }
-  
-  /* Hover effect */
+
   .scroll-btn:hover {
-    background-color: #929292; /* Change background color on hover */
+    background-color: #929292; 
     color: #fff;
   }
   
-  /* Animation effect */
+  
   @keyframes scaleAnimation {
     0% {
-      transform: scale(1); /* Start size */
+      transform: scale(1);
     }
     50% {
-      transform: scale(1.1); /* Middle size */
+      transform: scale(1.1);
     }
     100% {
-      transform: scale(1); /* End size */
+      transform: scale(1);
     }
   }
   
-  /* Apply animation on click */
+ 
   .scroll-btn:active {
     animation: scaleAnimation 0.3s ease;
   }
