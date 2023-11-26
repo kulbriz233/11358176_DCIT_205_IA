@@ -10,7 +10,6 @@
 
   openNavMenu.addEventListener("click", toggleNav);
   closeNavMenu.addEventListener("click", toggleNav);
-  // close the navMenu by clicking outside
   menuOverlay.addEventListener("click", toggleNav);
 
   function toggleNav() {
@@ -22,19 +21,19 @@
   navMenu.addEventListener("click", (event) =>{
       if(event.target.hasAttribute("data-toggle") && 
       	window.innerWidth <= mediaSize){
-      	// prevent default anchor click behavior
+      	
       	event.preventDefault();
       	const menuItemHasChildren = event.target.parentElement;
-        // if menuItemHasChildren is already expanded, collapse it
+        
         if(menuItemHasChildren.classList.contains("active")){
         	collapseSubMenu();
         }
         else{
-          // collapse existing expanded menuItemHasChildren
+          
           if(navMenu.querySelector(".menu-item-has-children.active")){
         	collapseSubMenu();
           }
-          // expand new menuItemHasChildren
+          
           menuItemHasChildren.classList.add("active");
           const subMenu = menuItemHasChildren.querySelector(".sub-menu");
           subMenu.style.maxHeight = subMenu.scrollHeight + "px";
@@ -48,11 +47,11 @@
   	.classList.remove("active");
   }
   function resizeFix(){
-  	 // if navMenu is open ,close it
+  	 
   	 if(navMenu.classList.contains("open")){
   	 	toggleNav();
   	 }
-  	 // if menuItemHasChildren is expanded , collapse it
+  	 
   	 if(navMenu.querySelector(".menu-item-has-children.active")){
         	collapseSubMenu();
      }
@@ -65,3 +64,32 @@
   });
 
 })();
+
+
+const animateBackground = () => {
+  const body = document.querySelector('body');
+  let hue = 0;
+  setInterval(() => {
+    hue = (hue + 1) % 360;
+    body.style.backgroundColor = `hsl(${hue}, 50%, 80%)`;
+  }, 50);
+};
+
+const slideInAwards = () => {
+  const awards = document.querySelectorAll('.award');
+  awards.forEach((award, index) => {
+    award.style.opacity = '0';
+    award.style.transform = 'translateX(-50px)';
+    award.style.transition = `opacity 0.5s ease ${index * 0.2}s, transform 0.5s ease ${index * 0.2}s`;
+  });
+
+  awards.forEach((award) => {
+    award.style.opacity = '1';
+    award.style.transform = 'translateX(0)';
+  });
+};
+
+window.onload = () => {
+  animateBackground();
+  slideInAwards();
+};

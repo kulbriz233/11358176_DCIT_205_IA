@@ -15,7 +15,6 @@
 
 div h1 {
   padding: 5px 5px;
-  background-color: #afafaf;
   text-align: center;
   font-size: 75px;
   font-weight: 900;
@@ -158,6 +157,11 @@ header .navbar {
 @media (max-width: 768px) {
   header {
     padding: 10px;
+  }
+
+  div h1 {
+    display: felx;
+    flex-wrap: wrap;
   }
 
   header.show-mobile-menu::before {

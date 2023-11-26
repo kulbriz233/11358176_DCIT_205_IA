@@ -1,0 +1,76 @@
+
+  
+  /* Main heading styles */
+  .main-heading {
+    font-size: 2.5em; /* Adjust font size */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align the text */
+    text-transform: uppercase; /* Uppercase text */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  
+  
+ 
+  body {
+    background: linear-gradient(to right, #2c2a58, #bd9c6c);
+    margin-top: 150px;
+  }
+  #awards{
+    animation: gradientAnimation 15s ease infinite;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  /* Basic styling */
+.awards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.award {
+  width: 550px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.award img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Hover effects */
+.award:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Animation */
+.award {
+  animation: fadeInUp 1s ease both;
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h3, p {
+  color: #fff;
+}
