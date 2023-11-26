@@ -7,8 +7,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Navbar styles */
-
 header {
   position: absolute;
   top: 0;
@@ -60,7 +58,6 @@ header .navbar {
   color: #ffffff;
 }
 
-/* Login form styles */
 .container {
   width: 95%;
   margin: 0 auto;
@@ -150,8 +147,6 @@ button:hover {
   padding-bottom: 35px;
 }
 
-
-/* Beginning of footer */
 .footer {
   background-color: #333;
   color: #fff;
@@ -290,4 +285,3 @@ footer .fr {
   margin: 10px 0 0 0;
 }
 }
-/*End of footer*/

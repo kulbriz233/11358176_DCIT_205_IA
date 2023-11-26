@@ -26,8 +26,6 @@ div h1 {
   
 }
 
-
-/**/
 header {
   position: absolute;
   top: 0;
@@ -221,9 +219,6 @@ header .navbar {
   }
 }
 
-
-
-/*Beginning of the first section*/
 body {
   background: #ecececdb;
 }
@@ -313,9 +308,6 @@ body {
   }
 }
 
-/* End of first section*/
-
-/* Beginning of footer */
 .footer {
     background-color: #333;
     color: #fff;
@@ -450,4 +442,3 @@ footer .fr {
     margin: 10px 0 0 0;
   }
 }
-  /*End of footer*/

@@ -1,5 +1,3 @@
-
-
 (() =>{
  
   const openNavMenu = document.querySelector(".open-nav-menu"),

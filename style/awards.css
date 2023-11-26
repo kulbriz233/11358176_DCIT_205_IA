@@ -1,12 +1,9 @@
-
-  
-  /* Main heading styles */
-  .main-heading {
-    font-size: 2.5em; /* Adjust font size */
-    color: #fff; /* Text color */
-    text-align: center; /* Center align the text */
-    text-transform: uppercase; /* Uppercase text */
-    margin-bottom: 20px; /* Space below the heading */
+.main-heading {
+    font-size: 2.5em;
+    color: #fff; 
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
   }
   
   
@@ -24,7 +21,6 @@
     flex-direction: row;
   }
   
-  /* Basic styling */
 .awards {
   display: flex;
   flex-wrap: wrap;
@@ -47,14 +43,12 @@
   border-radius: 5px;
 }
 
-/* Hover effects */
 .award:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
 }
 
-/* Animation */
 .award {
   animation: fadeInUp 1s ease both;
   transition: transform 0.3s ease-in-out;
